@@ -6,6 +6,8 @@ import { UserService } from './shared/services/user.service';
 @Component({
   selector: 'my-app',
   template: `
+    <my-users></my-users>
+
     <div class="jumbotron text-center">
       <h1>The App Lives!</h1>
       <p>{{ message }}</p>

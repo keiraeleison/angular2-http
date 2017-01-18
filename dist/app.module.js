@@ -11,6 +11,7 @@ var http_1 = require("@angular/http");
 var forms_1 = require("@angular/forms");
 var app_component_1 = require("./app.component");
 var user_service_1 = require("./shared/services/user.service");
+var users_component_1 = require("./users/users.component");
 require("rxjs/add/operator/map");
 require("rxjs/add/operator/catch");
 var AppModule = (function () {
@@ -26,7 +27,8 @@ AppModule = __decorate([
             forms_1.FormsModule
         ],
         declarations: [
-            app_component_1.AppComponent
+            app_component_1.AppComponent,
+            users_component_1.UsersComponent
         ],
         providers: [
             user_service_1.UserService
