@@ -10,6 +10,9 @@ var platform_browser_1 = require("@angular/platform-browser");
 var http_1 = require("@angular/http");
 var forms_1 = require("@angular/forms");
 var app_component_1 = require("./app.component");
+var user_service_1 = require("./shared/services/user.service");
+require("rxjs/add/operator/map");
+require("rxjs/add/operator/catch");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -24,6 +27,9 @@ AppModule = __decorate([
         ],
         declarations: [
             app_component_1.AppComponent
+        ],
+        providers: [
+            user_service_1.UserService
         ],
         bootstrap: [app_component_1.AppComponent]
     })
