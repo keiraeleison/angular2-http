@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 
 import { UserService } from './shared/services/user.service';
 import { UsersComponent } from './users/users.component';
+import { UserListComponent } from './users/user-list/user-list.component'
+import { UserSingleComponent } from './users/user-single/user-single.component'
 
 
 
@@ -23,7 +25,9 @@ import 'rxjs/add/operator/catch';
   ],
   declarations: [ 
     AppComponent,
-    UsersComponent
+    UsersComponent,
+    UserListComponent,
+    UserSingleComponent
   ],
   providers: [
     UserService

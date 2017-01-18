@@ -27,8 +27,8 @@ var UserService = (function () {
     /**
      * Get a single user
      */
-    UserService.prototype.getUser = function () {
-        return this.http.get('http://example.com')
+    UserService.prototype.getUser = function (id) {
+        return this.http.get(this.usersUrl + "/" + id)
             .map(function (res) { return res.json().data; })
             .catch(this.handleError);
     };

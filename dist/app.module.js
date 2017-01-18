@@ -13,6 +13,8 @@ var app_routing_1 = require("./app.routing");
 var app_component_1 = require("./app.component");
 var user_service_1 = require("./shared/services/user.service");
 var users_component_1 = require("./users/users.component");
+var user_list_component_1 = require("./users/user-list/user-list.component");
+var user_single_component_1 = require("./users/user-single/user-single.component");
 require("rxjs/add/operator/map");
 require("rxjs/add/operator/catch");
 var AppModule = (function () {
@@ -30,7 +32,9 @@ AppModule = __decorate([
         ],
         declarations: [
             app_component_1.AppComponent,
-            users_component_1.UsersComponent
+            users_component_1.UsersComponent,
+            user_list_component_1.UserListComponent,
+            user_single_component_1.UserSingleComponent
         ],
         providers: [
             user_service_1.UserService
